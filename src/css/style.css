@@ -410,14 +410,9 @@ ul.order li {
       -ms-flex-align: center;
           align-items: center;
 }
-ul.order li:hover button {
-  display: inline;
-}
 ul.order li button {
   border: 0;
-  display: none;
   line-height: 1;
-  padding: 0;
 }
 ul.order li.total {
   font-weight: 600;
@@ -438,6 +433,13 @@ ul.order li span.count {
 }
 ul.order li span.count span {
   display: inline-block;
+}
+.total span {
+  float: right;
+}
+.order-enter-done button {
+  position: absolute;
+  right: 0;
 }
 .order-title {
   text-align: center;

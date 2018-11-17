@@ -120,15 +120,9 @@ ul.order
     font-size 1.4rem
     justify-content space-between
     align-items center
-    &:hover
-      // padding 1rem 0
-      button
-        display inline
     button
       border 0
-      display none
       line-height 1
-      padding 0
     &.total
       font-weight 600
       border-bottom 3px solid black
@@ -145,6 +139,13 @@ ul.order
       span
         display inline-block
         // transition all 0.5s
+
+.total span
+  float right
+
+.order-enter-done button
+  position absolute
+  right 0
 
 .order-title
   text-align center
