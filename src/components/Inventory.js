@@ -6,11 +6,11 @@ import EditFishForm from "./EditFishForm";
 
 class Inventory extends React.Component {
   static propTypes = {
-    addFish: PropTypes.func,
-    updateFish: PropTypes.func,
-    deleteFish: PropTypes.func,
-    loadSampleFishes: PropTypes.func,
-    fishes: PropTypes.object
+    addFish: PropTypes.func.isRequired,
+    updateFish: PropTypes.func.isRequired,
+    deleteFish: PropTypes.func.isRequired,
+    loadSampleFishes: PropTypes.func.isRequired,
+    fishes: PropTypes.object.isRequired
   };
 
   render() {

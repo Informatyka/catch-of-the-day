@@ -6,14 +6,14 @@ import { formatPrice } from "../helpers";
 class Fish extends React.Component {
   static propTypes = {
     details: PropTypes.shape({
-      name: PropTypes.string,
-      image: PropTypes.string,
-      status: PropTypes.string,
-      description: PropTypes.string,
-      price: PropTypes.number
-    }),
-    addToOrder: PropTypes.func,
-    index: PropTypes.string
+      name: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+      status: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      price: PropTypes.number.isRequired
+    }).isRequired,
+    addToOrder: PropTypes.func.isRequired,
+    index: PropTypes.string.isRequired
   };
 
   addToOrder = event => {
